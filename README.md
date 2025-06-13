@@ -8,6 +8,8 @@ Este projeto demonstra como o ESP32 pode processar a lib especifica* para o MPU9
 - Biblioteca MPU9250 SparkFunMPU9250-DMP.h (https://github.com/sparkfun/SparkFun_MPU-9250-DMP_Arduino_Library/blob/master/examples/MPU9250_Basic/MPU9250_Basic.ino)
 - Placa ESP32
 - Módulo MPU9250
+- 
+![Ligação sistema IMU com outro MCU](https://github.com/user-attachments/assets/86e27040-5016-4a91-9800-6b3e374b33e7)
 
   
 ## 📂 Estrutura
