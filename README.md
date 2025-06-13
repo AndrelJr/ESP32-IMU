@@ -1,4 +1,4 @@
-# ESP32 Processando algoritmo de filtragem e entregando os 3 eixos pela UART.
+# ESP32 com processador do algoritmo de filtragem e comunicação dos 3 eixos pela UART.
 
 Este projeto demonstra como o ESP32 pode processar a lib especifica* para o MPU9250 e se comunicar com outro MCU usando protocolo UART e ou Bluetooth Low Energy (BLE).
 
