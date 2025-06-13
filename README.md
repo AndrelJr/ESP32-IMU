@@ -22,6 +22,7 @@ Este projeto demonstra como o ESP32 pode processar a lib especifica* para o MPU9
 3. Caso queira comunicação bluetooth e ver no celular por exemplo: #define HABILITAR_BLUETOOTH
 4. Comente esta linha para desabilitar o Bluetooth e ele não será compilado no codigo main #define HABILITAR_BLUETOOTH  
 5. Abra o código receptor no Arduino Due e veja os dados ja processados com filtros
+6. App (sugestão) caso queria ver os dados em dispositivos android https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&pcampaignid=web_share
 
 Alguns comandos da bilbioteca que podem ser uteis:
 
