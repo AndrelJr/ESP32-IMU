@@ -1,0 +1,52 @@
+// Codigo do ESP32 para envio dos eixos X,Y,Z para o DUE
+// Data da criação:    31/08/2021
+// Ultima atualização: 12/06/2025
+// Atualização 1.3
+// Biblioteca usada https://github.com/AndrelJr/SparkFun_MPU-9250-DMP_Arduino_Library
+// Link Github      https://github.com/AndrelJr/ESP32-IMU/tree/main
+
+
+Arquivo .h dentro da pasta do codigo main use:
+ 
+#include "src/SparkFunMPU9250-DMP.h"
+
+Caso instale a biblioteca use: 
+
+#include <SparkFunMPU9250-DMP.h>
+
+localização no windows -> c:\Documents\Arduino\libraries
+
+Abra o código em ESP32_IMU_SERIAL.ino e envie para um ESP32
+Veja a comunicação via monitor serial.
+Caso queira comunicação bluetooth e ver no celular por exemplo: #define HABILITAR_BLUETOOTH
+Comente esta linha para desabilitar o Bluetooth e ele não será compilado no codigo main #define HABILITAR_BLUETOOTH
+Abra o código receptor no Arduino Due e veja os dados ja processados com filtros
+
+
+O biblioteca processa os filtros e ja entrega os 3 eixos prontos, e ela permite algumas cofigurações.
+
+
+
+Alguns comandos da bilbioteca que podem ser uteis:
+
+// Use setGyroFSR() e setAccelFSR() para configurar 
+// as faixas de escala completa do giroscópio e do acelerômetro. 
+// As opções do giroscópio são +/- 250, 500, 1000 ou 2000 dps
+
+imu.setGyroFSR(2000); // Defina o giroscópio para 2000 dps
+
+// As opções de aceleração são +/- 2, 4, 8 ou 16 g imu.setAccelFSR(2); // Set accel to +/-2g
+
+// Nota: o FSR do magnetômetro do MPU-9250 é definido em // +/- 4912 uT (micro-tesla)
+
+// setLPF() pode ser usado para definir o filtro passa-baixa digital 
+// do acelerômetro e do giroscópio. // Pode ser qualquer um dos seguintes: 188, 98, 42, 20, 10, 5 
+// (os valores estão em Hz). imu.setLPF(5); // Defina a frequência de canto do LPF para 5 Hz
+
+// A taxa de amostragem do acel/giroscópio pode ser definida usando 
+// setSampleRate. Os valores aceitáveis ​​variam de 4 Hz a 1 kHz imu.setSampleRate(10); // Set sample rate to 10Hz
+
+// Da mesma forma, a taxa de amostragem da bússola (magnetômetro) pode ser 
+// definida usando a função setCompassSampleRate(). 
+// Este valor pode variar entre: 1-100Hz imu.setCompassSampleRate(10); 
+// Defina a taxa de mag para 10 Hz
