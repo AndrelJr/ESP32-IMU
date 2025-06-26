@@ -3,13 +3,14 @@
 Este projeto demonstra como o ESP32 pode processar a lib especifica* para o MPU9250 e se comunicar com outro MCU usando protocolo UART e ou Bluetooth Low Energy (BLE).
 
 ## 🛠 Requisitos
-- IDE Arduino configurada para ESP32
+- IDE Arduino configurada para ESP32 versão instalada da placa 3.1.3     (https://dl.espressif.com/dl/package_esp32_index.json)
 - Biblioteca BLE (`ESP32 BLE Arduino`)
 - Biblioteca MPU9250 SparkFunMPU9250-DMP.h (https://github.com/sparkfun/SparkFun_MPU-9250-DMP_Arduino_Library/blob/master/examples/MPU9250_Basic/MPU9250_Basic.ino)
 - Placa ESP32
 - Módulo MPU9250
 - 
-![Ligação sistema IMU com outro MCU](https://github.com/user-attachments/assets/86e27040-5016-4a91-9800-6b3e374b33e7)
+
+![Inercial com Esp32-Due](https://github.com/user-attachments/assets/6fc33b54-6482-4022-824e-75437559d6f6)
 
   
 ## 📂 Estrutura
